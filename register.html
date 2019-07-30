@@ -13,20 +13,15 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <style media="screen">
-      .required:after { content:"*"; color: red}
-    </style>
 </head>
 
 <body>
-    <!-- Navbar -->
     <div>
         <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ffffff;height: 100px;">
             <div class="container-fluid"><a class="navbar-brand" href="https://www.mahindraecolecentrale.edu.in/" target="_blank">MEC | Mahindra&nbsp;École Centrale</a><a href="https://www.mahindraecolecentrale.edu.in/" target="_blank"><img src="assets/img/Mahindra%20Ecole%20Centrale.jpg" style="height: 40px;" alt="Mahindra Ecole Centrale Logo" /></a></div>
         </nav>
         <nav class="navbar navbar-light navbar-expand-md fixed-top main-nav" style="background-color: rgba(210,210,210,0.86);margin: 100px 0px 0px;">
-            <div class="container-fluid">
-                <div><img id="urs-logo-nav" src="assets/img/URS-Mini.jpg" style="margin-right: 2em;"></div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a href="index.html" style="width: 50px;margin-right: 1em;"><img id="urs-logo-nav" src="assets/img/URS-Mini.jpg" style="margin-right: 2em;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav flex-grow-1 justify-content-between">
@@ -38,48 +33,49 @@
                             </div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html">Register</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link">Contact Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
                     </ul>
-                </div>
             </div>
-        </nav>
     </div>
-
-    <div class="container" style="padding-right: 4em;padding-left: 4em;padding-bottom: 4em;">
+    </nav>
+    </div>
+    <div style="padding-right: 4em;padding-left: 4em;padding-bottom: 4em;">
         <h1 style="margin-top: 170px;margin-left: 30px;">Register</h1>
-
         <div>
             <h4 style="margin-top: 1em;margin-left: 30px;"><span style="text-decoration: underline;">Paper Presentation</span></h4>
-            <a href="presentation.html">
+            <a href="register.html">
                 <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
             </a>
-            <form action="http://34.93.245.132:8080/" method="POST" style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
+            <form style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
-                        <div class="col"><input class="form-control" name="name" type="text" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                        <div class="col"><input class="form-control" type="text" required=""></div>
                     </div>
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
-                        <div class="col"><input class="form-control" name="email" type="email" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                        <div class="col"><input class="form-control" type="email" required=""></div>
                     </div>
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
-                        <div class="col"><input class="form-control" name="phone" type="tel" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                        <div class="col"><input class="form-control" type="tel" required=""></div>
                     </div>
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">College / University</label></div>
-                        <div class="col"><input class="form-control" name="college" type="text" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                        <div class="col"><input class="form-control" type="text" required=""></div>
                     </div>
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Paper Title</label></div>
-                        <div class="col"><input class="form-control" name="title" type="text" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                        <div class="col"><input class="form-control" type="number" required=""></div>
                     </div>
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Abstract Summary</label></div>
-                        <div class="col"><textarea class="form-control" name="abstract" rows="5" spellcheck="true" required></textarea></div>
+                        <div class="col-xl-4"><label class="col-form-label">Paper Title</label></div>
+                        <div class="col"><input class="form-control" type="text" required=""></div>
                     </div>
-                    <input id="category" name="category" type="hidden" value="presentation">
+                    <div class="form-row">
+                        <div class="col-xl-4"><label class="col-form-label">Abstract Summary</label></div>
+                        <div class="col"><textarea class="form-control" rows="5" spellcheck="true" required=""></textarea></div>
+                    </div>
                     <div class="form-row" style="margin-top: 10px;">
                         <div class="col" style="height: 3em;"><button class="btn btn-primary float-right" type="submit">Submit</button></div>
                     </div>
@@ -91,37 +87,80 @@
             <a href="hackathon.html">
                 <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
             </a>
-            <form action="http://34.93.245.132:8080/" method="POST" style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
+            <form style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Team Name</label></div>
-                        <div class="col"><input class="form-control" name="team_name" type="text" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
+                        <div class="col"><input class="form-control" type="text" required=""></div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
-                        <div class="col"><input class="form-control" name="name" type="text" required></div>
+                    <div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
-                        <div class="col"><input class="form-control" name="email" type="email" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 2</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
-                        <div class="col"><input class="form-control" name="phone" type="tel" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 3</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">College / University</label></div>
-                        <div class="col"><input class="form-control" name="college" type="text" required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
-                        <div class="col"><input class="form-control" name="name2" type="text"></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
-                        <div class="col"><input class="form-control" name="name3" type="text"></div>
-                    </div>
-                    <input id="category" name="category" type="hidden" value="hackathon">
                     <div class="form-row" style="margin-top: 10px;">
                         <div class="col" style="margin-top: 0px;"><button class="btn btn-primary float-right" type="submit">Submit</button></div>
                     </div>
@@ -133,41 +172,103 @@
             <a href="design-thinking.html">
                 <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
             </a>
-            <form action="http://34.93.245.132:8080/" method="POST" name="design_thinking" style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
+            <form style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Team Name</label></div>
-                        <div class="col"><input class="form-control" name="team_name" type="text" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
+                        <div class="col"><input class="form-control" type="text" required=""></div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
-                        <div class="col"><input class="form-control" name="name" type="text" required></div>
+                    <div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
-                        <div class="col"><input class="form-control" name="email" type="email" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 2</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
-                        <div class="col"><input class="form-control" name="phone" type="tel" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 3</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">College / University</label></div>
-                        <div class="col"><input class="form-control" name="college" type="text" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 4 (Optional)</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
-                        <div class="col"><input class="form-control" name="name2" type="text"></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
-                        <div class="col"><input class="form-control" name="name3" type="text"></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
-                        <div class="col"><input class="form-control" name="name4" type="text"></div>
-                    </div>
-                    <input id="category" name="category" type="hidden" value="design_thinking">
                     <div class="form-row" style="margin-top: 10px;">
                         <div class="col"><button class="btn btn-primary float-right" type="submit">Submit</button></div>
                     </div>
@@ -179,45 +280,106 @@
             <a href="startup-idea.html">
                 <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
             </a>
-            <form action="http://34.93.245.132:8080/" method="POST" name="startup" style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
+            <form style="margin-top: 10px;padding-right: 2em;padding-left: 2em;">
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Team Name</label></div>
-                        <div class="col"><input class="form-control" name="team_name" type="text" required></div>
+                        <div class="col-xl-4"><label class="col-form-label">Team Name</label></div>
+                        <div class="col"><input class="form-control" type="text" required=""></div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Name</label></div>
-                        <div class="col"><input class="form-control" name="name" type="text" required></div>
+                    <div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Email</label></div>
-                        <div class="col"><input class="form-control" name="email" type="email" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 2</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">Phone Number</label></div>
-                        <div class="col"><input class="form-control" name="phone" type="tel" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 3</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number" required=""></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text" required=""></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4 required"><label class="col-form-label">College / University</label></div>
-                        <div class="col"><input class="form-control" name="college" type="text" required></div>
+                    <div>
+                        <h5 style="margin-top: 10px;">Team Member 4 (Optional)</h5>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Name</label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Email</label></div>
+                            <div class="col"><input class="form-control" type="email"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Phone Number</label></div>
+                            <div class="col"><input class="form-control" type="tel"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">Year of study</label></div>
+                            <div class="col"><input class="form-control" type="number"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-xl-4"><label class="col-form-label">College / University</label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 2</label></div>
-                        <div class="col"><input class="form-control" name="name2" type="text"></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 3</label></div>
-                        <div class="col"><input class="form-control" name="name3" type="text"></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-xl-4"><label class="col-form-label">Team member 4</label></div>
-                        <div class="col"><input class="form-control" name="name4" type="text"></div>
-                    </div>
-                    <input id="category" name="category" type="hidden" value="startup">
                     <div class="form-row" style="margin-top: 10px;">
                         <div class="col"><button class="btn btn-primary float-right" type="submit">Submit</button></div>
                     </div>
-
                 </div>
             </form>
         </div>
