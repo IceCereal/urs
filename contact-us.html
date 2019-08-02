@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
@@ -15,40 +18,86 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body style="font-family: roboto;">
     <div>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ffffff;height: 100px;">
-            <div class="container-fluid"><a class="navbar-brand" href="https://www.mahindraecolecentrale.edu.in/" target="_blank">MEC | Mahindra&nbsp;École Centrale</a><a href="https://www.mahindraecolecentrale.edu.in/" target="_blank"><img src="assets/img/Mahindra%20Ecole%20Centrale.jpg" style="height: 40px;" alt="Mahindra Ecole Centrale Logo" /></a></div>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ffffff;height: 130px;">
+            <div class="container-fluid"><a class="navbar-brand" href="https://www.mahindraecolecentrale.edu.in/" target="_blank">MEC | Mahindra&nbsp;École Centrale<br><div><p id="urs-navbar-text" style="margin-bottom: 0px;;">Undergraduate Research Symposium 2019</p></div></a>
+                <a
+                    href="https://www.mahindraecolecentrale.edu.in/" target="_blank"><img src="assets/img/Mahindra%20Ecole%20Centrale.jpg" style="height: 50px;" alt="Mahindra Ecole Centrale Logo" /></a>
+            </div>
         </nav>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top main-nav" style="background-color: rgba(210,210,210,0.86);margin: 100px 0px 0px;">
-            <div class="container-fluid">
-                <div><img id="urs-logo-nav" src="assets/img/URS-Mini.jpg" style="margin-right: 2em;"></div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top main-nav" style="background-color: rgba(210,210,210,0.86);margin: 130px 0px 0px;">
+            <div class="container-fluid"><a href="index.html" style="width: 50px;margin-right: 1em;"><img id="urs-logo-nav" src="assets/img/URS-Mini.jpg" style="margin-right: 2em;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav flex-grow-1 justify-content-between">
+                    <ul class="nav navbar-nav flex-grow-1 justify-content-start" id="navbar-custom">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-dark" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
                             <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="presentation.html">Presentation</a><a class="dropdown-item" role="presentation" href="hackathon.html">Hackathon</a><a class="dropdown-item" role="presentation" href="design-thinking.html">Design Thinking</a>
                                 <a
                                     class="dropdown-item" role="presentation" href="startup-idea.html">Startup Idea</a>
                             </div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html">Register</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link">Contact Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
                     </ul>
             </div>
     </div>
     </nav>
     </div>
-    <div class="jumbotron" style="margin-top: 170px;padding-bottom: 32px;margin-bottom: 5px;padding-left: 5em;padding-right: 5em;">
-        <h1><span style="text-decoration: underline;">Contact Us</span></h1>
-        <p class="text-center" style="margin-bottom: 1em;">For general queries regarding the Undergraduate Research Symposium, feel free to send a mail to<br><a class="text-dark" href="mailto:">ursmec@mechyd.ac.in<br></a></p>
+
+    <div class="modal" id="Modal-Hack">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Hello There!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              ~ General Kenobi! ~
+              <br>
+
+              <img src="https://i.pinimg.com/originals/d8/19/30/d81930b4ed6e0702d4daf02aae30b4da.png" style="width:80vh; height:auto;" alt="This is a Anime Girl: Kurisu from Steins;gatew">
+
+              <span style="float:right">IceCereal</span>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+    <div class="jumbotron" style="margin-top: 195px;padding-bottom: 32px;margin-bottom: 5px;padding-left: 5em;padding-right: 5em;">
+        <h1><span style="text-decoration: underline;">Contact Us</span></h1><a class="text-dark" href="mailto:" style="font-size: 1.5em;"><i class="far fa-envelope"></i>&nbsp;Email us at: ursmec@mechyd.ac.in</a>
         <div style="margin-top: 4em;">
+            <h4>Faculties in-charge:</h4>
             <a class="text-dark" href="https://www.mahindraecolecentrale.edu.in/faculty/15/Jayasri-D.html">
                 <h5 style="margin-bottom: 0px;"><i class="fas fa-link" style="font-size:0.75em"></i>Dr. Jayasri D</h5>
             </a>
-            <h6>Organizer, URS 2019</h6>
-            <p><a class="text-dark" href="mailto:Jayasri.D@mechyd.ac.in"><i class="far fa-envelope"></i>&nbsp;Jayasri.D@mechyd.ac.in<br></a><i class="fas fa-phone"></i>&nbsp;040-67135146<br></p>
+            <h6>Co-ordinator, URS 2019</h6>
+            <p style="height: 1.5em;"><a class="text-dark" href="mailto:Jayasri.D@mechyd.ac.in">&nbsp;Jayasri.D@mechyd.ac.in<br></a><br></p>
+            <a href="https://www.mahindraecolecentrale.edu.in/faculty/88/Prafulla-Kalapatapu.html">
+                <h5 class="text-dark" style="margin-bottom: 0px;"><i class="fas fa-link" style="font-size:0.75em"></i>Dr. Prafulla K</h5>
+            </a>
+            <a href="https://www.mahindraecolecentrale.edu.in/faculty/86/Venkata-Dilip-Kumar-Pasupuleti-.html">
+                <h5 class="text-dark" style="margin-bottom: 0px;"><i class="fas fa-link" style="font-size:0.75em"></i>Dr. Venkata Dilip Kumar P</h5>
+            </a>
+            <a href="https://www.mahindraecolecentrale.edu.in/faculty/79/Prasad-Pokkunuri.html">
+                <h5 class="text-dark" style="margin-bottom: 0px;"><i class="fas fa-link" style="font-size:0.75em"></i>Dr. Prasad P</h5>
+            </a>
+            <h4 style="margin-top: 2em;">Student Volunteers:</h4>
+            <h5 style="margin-bottom: 0px;">Madhunika A</h5>
+            <p style="height: 1.5em;"><a class="text-dark" href="mailto:madhunika170222@mechyd.ac.in"><i class="far fa-envelope"></i>&nbsp;madhunika170222@mechyd.ac.in<br></a><br></p>
+            <h5 style="margin-bottom: 0px;">Raviteja Reddy M</h5>
+            <p style="height: 1.5em;"><a class="text-dark" href="mailto:raviteja170234@mechyd.ac.in"><i class="far fa-envelope"></i>&nbsp;raviteja170234@mechyd.ac.in<br></a><br></p>
         </div>
     </div>
     <div class="footer-dark" style="background-color: #242424;">
@@ -80,7 +129,6 @@
                             technical events like hackathon and start-up idea challenges are scheduled during this symposium. Eminent personalities from Academia and Industry will give keynote lectures along with student presentations. Representatives
                             from Industry&nbsp;and Academia will participate, interact and evaluate various technical sessions along with faculty of MEC.<br><br></p>
                     </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
                 <p class="copyright">URS |&nbsp;Mahindra Ecole Centrale © 2019</p>
             </div>
@@ -90,6 +138,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
+    <script src="assets/js/konami.js"></script>
 </body>
 
 </html>

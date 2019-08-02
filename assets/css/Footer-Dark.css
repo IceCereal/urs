@@ -92,3 +92,40 @@
   padding-top: 50px;
 }
 
+#paper-template {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+#navbar-custom {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding-right: 2em;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+#urs-navbar-text {
+  font-size: 0.86em;
+}
+
+.carousel-inner.carousel-inner-custom img {
+  width: 50vw !important;
+  height: auto !important;
+}
+
+#carousel-1 {
+  width: 60vw !important;
+  height: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
