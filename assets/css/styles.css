@@ -1,0 +1,32 @@
+.required:after { content:"*"; color: red}
+.badgebox
+{
+    opacity: 0;
+}
+
+.badgebox + .badge
+{
+  text-indent: -999999px;
+  width: 27px;
+  background-color: white;
+  color: black;
+}
+
+.badgebox:focus + .badge
+{
+    box-shadow: inset 0px 0px 5px;
+}
+
+.badgebox:checked + .badge
+{
+  text-indent: 0;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.carousel-img {
+  width: 100%;
+}
