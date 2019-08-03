@@ -16,75 +16,24 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $("#header").load("header.html")
+        $("#footer").load("footer.html");
+      });
+    </script>
 </head>
 
 <body style="font-family: roboto;">
-    <div>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ffffff;height: 130px;">
-            <div class="container-fluid"><a class="navbar-brand" href="https://www.mahindraecolecentrale.edu.in/" target="_blank">MEC | Mahindra&nbsp;École Centrale<br><div><p id="urs-navbar-text" style="margin-bottom: 0px;;">Undergraduate Research Symposium 2019</p></div></a>
-                <a
-                    href="https://www.mahindraecolecentrale.edu.in/" target="_blank"><img src="assets/img/Mahindra%20Ecole%20Centrale.jpg" style="height: 50px;" alt="Mahindra Ecole Centrale Logo" /></a>
-            </div>
-        </nav>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top main-nav" style="background-color: rgba(210,210,210,0.86);margin: 130px 0px 0px;">
-            <div class="container-fluid"><a href="index.html" style="width: 50px;margin-right: 1em;"><img id="urs-logo-nav" src="assets/img/URS-Mini.jpg" style="margin-right: 2em;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav flex-grow-1 justify-content-start" id="navbar-custom">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-dark" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="presentation.html">Presentation</a><a class="dropdown-item" role="presentation" href="hackathon.html">Hackathon</a><a class="dropdown-item" role="presentation" href="design-thinking.html">Design Thinking</a>
-                                <a
-                                    class="dropdown-item" role="presentation" href="startup-idea.html">Startup Idea</a>
-                            </div>
-                        </li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html">Register</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
-                    </ul>
-            </div>
-    </div>
-    </nav>
-    </div>
+    <div id="header"></div>
     <div class="jumbotron" style="margin-top: 195px;padding-bottom: 32px;margin-bottom: 5px;padding-left: 5em;padding-right: 5em;">
         <h1><span style="text-decoration: underline;">Competitions</span></h1>
         <h2>Hackathon</h2>
         <p class="text-justify">A 12-hour hackathon will be conducted on 22nd August. The theme will be decided by the organizers.</p>
         <p class="text-justify">Team Size: Upto 3<br></p>
     </div>
-    <div class="footer-dark" style="background-color: #242424;">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="presentation.html">Presentation</a></li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="https://www.mahindraecolecentrale.edu.in/" target="_blank">Mahindra Ecole Centrale</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Events</h3>
-                        <ul>
-                            <li><a href="presentation.html">Presentation</a></li>
-                            <li><a href="hackathon.html">Hackathon</a></li>
-                            <li><a href="design-thinking.html">Design Thinking</a></li>
-                            <li><a href="startup-idea.html">Startup Idea</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Undergraduate Research Symposium</h3>
-                        <p class="text-justify">Mahindra Ecole Centrale is organising its second annual R&amp;D showcase URS@MEC 2019. Students from various institutes will showcase their projects and research activities in the form of posters, talks and design prototypes. Various
-                            technical events like hackathon and start-up idea challenges are scheduled during this symposium. Eminent personalities from Academia and Industry will give keynote lectures along with student presentations. Representatives
-                            from Industry&nbsp;and Academia will participate, interact and evaluate various technical sessions along with faculty of MEC.<br><br></p>
-                    </div>
-                </div>
-                <p class="copyright">URS |&nbsp;Mahindra Ecole Centrale © 2019</p>
-            </div>
-        </footer>
-    </div>
+    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
