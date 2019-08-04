@@ -5,18 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>URS-2019</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
     <script>
       $(function(){
         $("#header").load("header.html")
@@ -47,17 +50,17 @@
             <br>
             <div class="container">
               <div class="row">
-                <div class="col-xs-3" style="padding-right: 20px">
-                  <label for="pbox" class="btn theme-dark" style="width:250px">Oral/Poster presentation <input onclick="toggle('pbox','presentation_form');" type="checkbox" id="pbox" class="badgebox"><span class="badge">&check;</span></label>
+                <div class="col-sm-3" align="center">
+                  <label for="pbox" class="btn theme-dark" style="width:260px">Oral/Poster presentation <input onclick="toggle('pbox','presentation_form');" type="checkbox" id="pbox" class="badgebox"><span class="badge">&check;</span></label>
                 </div>
-                <div class="col-xs-3" style="padding-right: 20px">
-                  <label for="dbox" class="btn theme-dark" style="width:250px">Design Thinking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="toggle('dbox','design_thinking_form');" id="dbox" class="badgebox"><span class="badge">&check;</span></label>
+                <div class="col-sm-3" align="center">
+                  <label for="dbox" class="btn theme-dark" style="width:260px">Design Thinking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="toggle('dbox','design_thinking_form');" id="dbox" class="badgebox"><span class="badge">&check;</span></label>
                 </div>
-                <div class="col-xs-3" style="padding-right: 20px">
-                  <label for="sbox" class="btn theme-dark" style="width:250px">Startup Ideas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="toggle('sbox','startup_form');" id="sbox" class="badgebox"><span class="badge">&check;</span></label>
+                <div class="col-sm-3" align="center">
+                  <label for="sbox" class="btn theme-dark" style="width:260px">Startup Ideas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="toggle('sbox','startup_form');" id="sbox" class="badgebox"><span class="badge">&check;</span></label>
                 </div>
-                <div class="col-xs-3" style="padding-right: 20px">
-                  <label for="hbox" class="btn theme-dark" style="width:250px">Hackathon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="toggle('hbox','hackathon_form');" id="hbox" class="badgebox"><span class="badge">&check;</span></label>
+                <div class="col-sm-3" align="center">
+                  <label for="hbox" class="btn theme-dark" style="width:260px">Hackathon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="toggle('hbox','hackathon_form');" id="hbox" class="badgebox"><span class="badge">&check;</span></label>
                 </div>
                 </div>
               </div>
@@ -68,9 +71,6 @@
               <div id="presentation_form" style="display:none">
                  <br>
                   <h3 style="">Paper Presentation</h3>
-                  <!-- <a href="presentation.html">
-                      <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
-                  </a> -->
                   <form action="http://34.93.245.132:8080/" method="POST">
                       <div class="form-group">
                           <div class="form-row">
@@ -110,9 +110,6 @@
               </div>
               <div id="hackathon_form" style="display:none">
                   <h3 style="">Hackathon</h3>
-                  <!-- <a href="hackathon.html">
-                      <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
-                  </a> -->
                   <form action="http://34.93.245.132:8080/" method="POST" style="margin-top: 10px">
                       <div class="form-group">
                           <div class="form-row">
@@ -156,9 +153,6 @@
               </div>
               <div id="design_thinking_form" style="display:none">
                   <h3 style="">Design Thinking</h3>
-                  <!-- <a href="design-thinking.html">
-                      <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
-                  </a> -->
                   <form action="http://34.93.245.132:8080/" method="POST" name="design_thinking" style="margin-top: 10px">
                       <div class="form-group">
                           <div class="form-row">
@@ -210,9 +204,6 @@
               </div>
               <div id="startup_form" style="display:none">
                   <h3 style="">Startup Idea</h3>
-                  <!-- <a href="startup-idea.html">
-                      <h6 style="margin-top: 10px;margin-left: 30px;"><i class="fas fa-link"></i>Guidelines</h6>
-                  </a> -->
                   <form action="http://34.93.245.132:8080/" method="POST" name="startup">
                       <div class="form-group">
                           <div class="form-row">
@@ -255,17 +246,13 @@
                           <div class="form-row" style="margin-top: 10px;">
                               <div class="col"><button class="btn theme-dark float-right" type="submit">Submit</button></div>
                           </div>
-                  </form>
-              </div>
-        </div>
+                      </form>
+                    </div>
+                  </div>
             </div>
 
   </div>
     <div id="footer"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
 </body>
 
 </html>
