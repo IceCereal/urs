@@ -41,7 +41,7 @@
 }
 
 .carousel-img {
-  height: 1000px;
+  height: 920px;
 }
 
 .nav-theme {
@@ -67,6 +67,16 @@
     width:100%;
 }
 
+.responsive-urs {
+  height: 100px;
+  padding: 10px 0 10px 0;
+}
+
+.responsive-mec {
+  height: 90px;
+  padding: 10px 0 10px 0;
+}
+
 @media screen and (max-width: 768px) {
   .carousel-img {
     height: 200px;
@@ -76,12 +86,21 @@
     padding-top: 155px;
   }
 
-  img.responsive {
-    height: auto;
+  .responsive-urs {
+    height: 80px;
+  }
+
+  .responsive-mec {
+    height: 70px;
   }
 
   .Hidd {
     font-size: 0;
+  }
+
+  .left-right {
+    float: none;
+    margin: 0 auto;
   }
 
 }
