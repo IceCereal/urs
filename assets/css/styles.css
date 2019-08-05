@@ -53,10 +53,6 @@ html, body {
   border-width: 2px;
 }
 
-.badgebox:focus + .badge {
-    box-shadow: inset 0px 0px 5px;
-}
-
 .badgebox:checked + .badge {
   text-indent: 0;
 }
