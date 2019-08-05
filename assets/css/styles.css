@@ -4,19 +4,47 @@
   --main-theme-dark-color: #212121;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.event > a:hover {
+  text-decoration: none;
+}
+
+.my-card {
+    position:relative;
+    text-align: center;
+    background-color: var(--main-theme-dark-color);
+}
+
+.card {
+  background: transparent;
+  border-width: medium;
+  border-color: var(--main-theme-dark-color);
+  color: var(--main-theme-dark-color);
+}
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.dark_text {
+  color: var(--main-theme-dark-color);
+}
+
 .required:after { content:"*"; color: red}
 
 .dropdown-item:active {
   background: var(--main-theme-dark-color);
 }
 
-.badgebox
-{
+.badgebox {
     opacity: 0;
 }
 
-.badgebox + .badge
-{
+.badgebox + .badge {
   text-indent: -999999px;
   width: 27px;
   background-color: var(--main-theme-color);
@@ -25,13 +53,11 @@
   border-width: 2px;
 }
 
-.badgebox:focus + .badge
-{
+.badgebox:focus + .badge {
     box-shadow: inset 0px 0px 5px;
 }
 
-.badgebox:checked + .badge
-{
+.badgebox:checked + .badge {
   text-indent: 0;
 }
 
@@ -47,6 +73,12 @@
 .nav-theme {
   background: var(--main-nav-theme-color);
 }
+
+.nav-theme-index {
+  background: var(--main-nav-theme-color);
+  opacity: 0.8;
+}
+
 
 .theme {
   background: var(--main-theme-color);
@@ -77,7 +109,16 @@
   padding: 10px 0 10px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .carousel-img {
+    height: 500px;
+  }
+  .carousel {
+    padding-top: 100px;
+  }
+}
+
+@media all and (max-width: 767px) {
   .carousel-img {
     height: 200px;
   }
@@ -102,7 +143,23 @@
     float: none;
     margin: 0 auto;
   }
+  .event {
+    margin-top: 10px;
+  }
 
+  .event {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .urs-logo {
+    padding-left: 8px;
+  }
+
+  .nav-theme-index {
+    background-color: var(--main-nav-theme-color);
+    opacity: 1.0;
+  }
 }
 
 .navbar ul {
