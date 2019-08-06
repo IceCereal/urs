@@ -12,16 +12,52 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-      $(function(){
-        $("#header").load("header.html")
-        $("#footer").load("footer.html");
-      });
-    </script>
 </head>
 
 <body style="font-family: roboto;">
-    <div id="header"></div>
+    <div style="">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top nav-theme" style="height: 100px;">
+            <div class="container-fluid">
+              <a class="navbar-brand urs-logo" href="index.html">
+                <img class="img-fluid responsive-urs" src="assets/img/URS.png" style="" alt="URS Logo" />
+              </a>
+
+              <div class="container div-Hidd">
+                  <h2 style="text-align: center">Undergraduate Research Symposium</h2>
+                  <h5 style="text-align: center">6 September, 2019</h5>
+              </div>
+
+              <a href="https://www.mahindraecolecentrale.edu.in/" target="_blank">
+                <img class="img-fluid responsive-mec" src="assets/img/meclogo.png" style="" alt="Mahindra Ecole Centrale Logo" />
+              </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top main-nav theme-dark" style="margin: 100px 0px 0px; padding-left: 35px">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" style="width: 50px;margin-right: 1em; color: white">
+                <strong>URS</strong>
+              </a>
+              <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav flex-grow-1 justify-content-start menu-ul" id="navbar-custom">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: white">Events</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="dropdown-item" role="presentation" href="presentation.html">Presentation</a></li>
+                            <li><a class="dropdown-item" role="presentation" href="hackathon.html">Hackathon</a></li>
+                            <li><a class="dropdown-item" role="presentation" href="design-thinking.html">Design Thinking</a></li>
+                            <li><a class="dropdown-item" role="presentation" href="startup-idea.html">Startup Idea</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html" style="color: white">Register</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="contact-us.html" style="color: white">Contact Us</a></li>
+                </ul>
+             </div>
+          </div>
+      </nav>
+    </div>
 
     <div class="theme">
       <div class="container theme" style="padding-top: 200px; padding-bottom: 200px">
@@ -48,7 +84,38 @@
       </div>
     </div>
 
-    <div id="footer"></div>
+    <div class="footer-dark theme-dark navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="presentation.html">Presentation</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="https://www.mahindraecolecentrale.edu.in/" target="_blank">Mahindra École Centrale</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Events</h3>
+                    <ul>
+                        <li><a href="presentation.html">Presentation</a></li>
+                        <li><a href="hackathon.html">Hackathon</a></li>
+                        <li><a href="design-thinking.html">Design Thinking</a></li>
+                        <li><a href="startup-idea.html">Startup Idea</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Undergraduate Research Symposium</h3>
+                    <p class="text-justify">Mahindra École Centrale is organising its second annual R&D showcase URS@MEC 2019. Students from various institutes will showcase their projects and research activities in the form of posters, talks and design prototypes. Various
+                        technical events like hackathon and start-up idea challenges are scheduled during this symposium. Eminent personalities from Academia and Industry will give keynote lectures along with student presentations. Representatives
+                        from Industry and Academia will participate, interact and evaluate various technical sessions along with faculty of MÉC.<br><br></p>
+                </div>
+            </div>
+            <p class="copyright">URS | Mahindra École Centrale © 2019</p>
+        </div>
+    </div>
 </body>
 
 </html>
