@@ -87,38 +87,3 @@
   font-size: 13px;
   margin-bottom: 0;
 }
-
-#anchor {
-  padding-top: 50px;
-}
-
-#paper-template {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-}
-
-#navbar-custom {
-  font-size: 1em;
-  font-weight: 500;
-}
-
-/* .nav-item {
-  border-left: solid;
-  border-width: 1px;
-} */
-
-.nav-item > a {
-  margin-right: 2em;
-  margin-left: 2em;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-}
-
-#urs-navbar-text {
-  font-size: 0.86em;
-}
